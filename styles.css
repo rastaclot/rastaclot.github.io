@@ -7,6 +7,7 @@ body {
     align-items: center;      /* Centers horizontally */
     background: #000;
     overflow: hidden;         /* Hides any scroll bars that might appear */
+    font-family: 'Orbitron', sans-serif; /* Use the Orbitron font */
 }
 
 #card3D { 
@@ -50,3 +51,40 @@ body {
     background-color: #4b1de4;
     box-shadow: 0 0 15px #4b1de4, 0 0 25px #4b1de4, 0 0 35px #4b1de4, 0 0 45px #4b1de4;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -10px 15px #5d34e5, 0 -20px 20px #5d34e5;
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #5d34e5;
+    text-shadow: 0 0 10px #5d34e5;
+}
+
