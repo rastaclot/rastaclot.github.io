@@ -53,6 +53,8 @@ body {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background-color: #1a1a1a;
     color: white;
@@ -60,8 +62,6 @@ footer {
     padding: 10px 0;
     box-shadow: 0 -10px 15px #5d34e5, 0 -20px 20px #5d34e5;
     font-family: 'Orbitron', sans-serif;
-    position: absolute;
-    bottom: 0;
 }
 
 footer ul {
@@ -98,16 +98,23 @@ footer ul li a:hover {
     #card3D {
         margin-top: 20px; /* Adds space above the 3D card */
         margin-bottom: 20px; /* Adds space below the 3D card */
+        transform: scale(0.8); /* Makes the 3D card smaller */
     }
 
     #baseText {
         top: -50px; /* Adjusts position to reduce overlap */
+        font-size: 18px; /* Makes the base text smaller */
     }
 
     #playButton {
         top: 0; /* Resets the top position */
         margin-top: 20px; /* Adds space above the button */
-        margin-bottom: 60px; /* Adds space below the button to ensure it's above the footer */
+        font-size: 18px; /* Makes the button text smaller */
+    }
+
+    #playButton a {
+        font-size: 18px; /* Makes the button text smaller */
+        padding: 8px 16px; /* Adjusts padding for smaller size */
     }
 
     footer {
