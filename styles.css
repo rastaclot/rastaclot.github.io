@@ -53,8 +53,6 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: #1a1a1a;
     color: white;
@@ -62,6 +60,8 @@ footer {
     padding: 10px 0;
     box-shadow: 0 -10px 15px #5d34e5, 0 -20px 20px #5d34e5;
     font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    bottom: 0;
 }
 
 footer ul {
@@ -107,11 +107,11 @@ footer ul li a:hover {
     #playButton {
         top: 0; /* Resets the top position */
         margin-top: 20px; /* Adds space above the button */
+        margin-bottom: 60px; /* Adds space below the button to ensure it's above the footer */
     }
 
     footer {
         padding: 5px 0; /* Reduces padding for the footer */
     }
 }
-
 
