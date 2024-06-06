@@ -14,7 +14,7 @@ body {
     width: auto;             /* Maintains intrinsic width */
     height: auto;            /* Maintains intrinsic height */
     flex: none;              /* No resizing */
-    margin-bottom: -70px;    /* Moves elements below it upwards, closer to the card */
+    margin-bottom: -70px;   /* Moves elements below it upwards, closer to the card */
 }
 
 #baseText, #playButton {
@@ -89,36 +89,9 @@ footer ul li a:hover {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 600px) {
-    body {
-        justify-content: flex-start; /* Aligns elements to the top */
-        padding-top: 20px; /* Adds padding to top */
-    }
-
-    #card3D {
-        margin-top: 20px; /* Adds space above the 3D card */
-        margin-bottom: 20px; /* Adds space below the 3D card */
-        transform: scale(0.8); /* Makes the 3D card smaller */
-    }
-
-    #baseText {
-        top: -50px; /* Adjusts position to reduce overlap */
-        font-size: 18px; /* Makes the base text smaller */
-    }
-
-    #playButton {
-        top: 0; /* Resets the top position */
-        margin-top: 20px; /* Adds space above the button */
-        font-size: 18px; /* Makes the button text smaller */
-    }
-
+@media (max-width: 768px) {
     #playButton a {
-        font-size: 18px; /* Makes the button text smaller */
-        padding: 8px 16px; /* Adjusts padding for smaller size */
-    }
-
-    footer {
-        padding: 5px 0; /* Reduces padding for the footer */
+        font-size: 18px;  /* Smaller font size for mobile */
+        padding: 8px 16px;  /* Smaller padding for mobile */
     }
 }
-
