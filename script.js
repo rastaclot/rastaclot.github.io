@@ -6,27 +6,29 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('card3D').appendChild(renderer.domElement);
 
 const loader = new THREE.TextureLoader();
-const textureFront = loader.load('cardfront.png');
-const textureBack = loader.load('cardback.png');
+const textureFront = loader.load('brettfront.png');
+const textureBack = loader.load('brettback.png');
 
-const geometry = new THREE.BoxGeometry(2, 3, 0.1);
+// Create a cylinder geometry to mimic a coin (3D circle)
+const geometry = new THREE.CylinderGeometry(1, 1, 0.1, 64);
 const materialFront = new THREE.MeshBasicMaterial({ map: textureFront });
 const materialBack = new THREE.MeshBasicMaterial({ map: textureBack });
+const materialSide = new THREE.MeshBasicMaterial({ color: 0x333333 });
+
 const materials = [
-    new THREE.MeshBasicMaterial({ color: 0x333333 }),
-    new THREE.MeshBasicMaterial({ color: 0x333333 }),
-    new THREE.MeshBasicMaterial({ color: 0x333333 }),
-    new THREE.MeshBasicMaterial({ color: 0x333333 }),
-    materialFront,
-    materialBack
+    materialSide, // Side
+    materialSide, // Side
+    materialFront, // Front
+    materialBack // Back
 ];
-const card = new THREE.Mesh(geometry, materials);
-scene.add(card);
+
+const coin = new THREE.Mesh(geometry, materials);
+scene.add(coin);
 camera.position.z = 5;
 
 function animate() {
     requestAnimationFrame(animate);
-    card.rotation.y += 0.01;
+    coin.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
 
@@ -39,3 +41,4 @@ function onWindowResize() {
 }
 
 animate();
+
