@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers vertically */
+    align-items: center;      /* Centers horizontally */
+    background: #000;
+    overflow: hidden;         /* Hides any scroll bars that might appear */
+}
+
+#card3D { 
+    width: auto;             /* Maintains intrinsic width */
+    height: auto;            /* Maintains intrinsic height */
+    flex: none;              /* No resizing */
+    margin-bottom: -70px;   /* Moves elements below it upwards, closer to the card */
+}
+
+#baseText, #playButton {
+    width: 100%;             /* Ensures full width for center alignment */
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#baseText {
+    font-size: 24px;
+    position: relative;
+    top: -100px;             /* Adjusts position upwards, closer or onto the card */
+}
+
+#playButton {
+    position: relative;
+    top: -140px;             /* Further adjust this value to reduce overlap */
+    margin-top: 75px;        /* Space above the button, adjust if necessary */
+}
+
+#playButton a {
+    font-size: 24px;
+    background-color: #0052ff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0052ff, 0 0 20px #0052ff, 0 0 30px #0052ff, 0 0 40px #0052ff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#playButton a:hover {
+    background-color: #0037b3;
+    box-shadow: 0 0 15px #007bff, 0 0 25px #007bff, 0 0 35px #007bff, 0 0 45px #007bff;
+}
