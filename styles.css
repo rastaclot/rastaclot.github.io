@@ -14,7 +14,7 @@ body {
     width: auto;             /* Maintains intrinsic width */
     height: auto;            /* Maintains intrinsic height */
     flex: none;              /* No resizing */
-    margin-bottom: -70px;   /* Moves elements below it upwards, closer to the card */
+    margin-bottom: -70px;    /* Moves elements below it upwards, closer to the card */
 }
 
 #baseText, #playButton {
@@ -92,15 +92,20 @@ footer ul li a:hover {
 @media (max-width: 600px) {
     body {
         justify-content: flex-start; /* Aligns elements to the top */
+        padding-top: 20px; /* Adds padding to top */
     }
 
     #card3D {
         margin-top: 20px; /* Adds space above the 3D card */
-        margin-bottom: 0; /* Removes the negative bottom margin */
+        margin-bottom: 20px; /* Adds space below the 3D card */
+    }
+
+    #baseText {
+        top: -50px; /* Adjusts position to reduce overlap */
     }
 
     #playButton {
-        top: -80px; /* Adjusts position to reduce overlap */
+        top: 0; /* Resets the top position */
         margin-top: 20px; /* Adds space above the button */
     }
 
