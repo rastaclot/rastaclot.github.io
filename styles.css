@@ -88,3 +88,25 @@ footer ul li a:hover {
     text-shadow: 0 0 10px #5d34e5;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start; /* Aligns elements to the top */
+    }
+
+    #card3D {
+        margin-top: 20px; /* Adds space above the 3D card */
+        margin-bottom: 0; /* Removes the negative bottom margin */
+    }
+
+    #playButton {
+        top: -80px; /* Adjusts position to reduce overlap */
+        margin-top: 20px; /* Adds space above the button */
+    }
+
+    footer {
+        padding: 5px 0; /* Reduces padding for the footer */
+    }
+}
+
+
