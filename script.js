@@ -6,8 +6,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('card3D').appendChild(renderer.domElement);
 
 const loader = new THREE.TextureLoader();
-const textureFront = loader.load('cardfront.png');
-const textureBack = loader.load('cardback.png');
+const textureFront = loader.load('brettfront.png');
+const textureBack = loader.load('brettback.png');
 
 const geometry = new THREE.BoxGeometry(2, 3, 0.1);
 const materialFront = new THREE.MeshBasicMaterial({ map: textureFront });
