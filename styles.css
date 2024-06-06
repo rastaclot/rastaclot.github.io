@@ -3,18 +3,15 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Centers vertically */
-    align-items: center;      /* Centers horizontally */
+    justify-content: space-between;  /* Distributes space between and pushes footer to bottom */
     background: #000;
-    overflow: hidden;         /* Hides any scroll bars that might appear */
     font-family: 'Orbitron', sans-serif; /* Use the Orbitron font */
 }
 
 #card3D { 
     width: auto;             /* Maintains intrinsic width */
     height: auto;            /* Maintains intrinsic height */
-    flex: none;              /* No resizing */
-    margin-bottom: -70px;   /* Moves elements below it upwards, closer to the card */
+    margin-bottom: -70px;    /* Moves elements below it upwards, closer to the card */
 }
 
 #baseText, #playButton {
@@ -53,8 +50,6 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: #1a1a1a;
     color: white;
