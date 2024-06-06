@@ -37,16 +37,16 @@ body {
 
 #playButton a {
     font-size: 24px;
-    background-color: #0052ff;
+    background-color: #5d34e5;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #0052ff, 0 0 20px #0052ff, 0 0 30px #0052ff, 0 0 40px #0052ff;
+    box-shadow: 0 0 10px #5d34e5, 0 0 20px #5d34e5, 0 0 30px #5d34e5, 0 0 40px #5d34e5;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 #playButton a:hover {
-    background-color: #0037b3;
-    box-shadow: 0 0 15px #007bff, 0 0 25px #007bff, 0 0 35px #007bff, 0 0 45px #007bff;
+    background-color: #4b1de4;
+    box-shadow: 0 0 15px #4b1de4, 0 0 25px #4b1de4, 0 0 35px #4b1de4, 0 0 45px #4b1de4;
 }
