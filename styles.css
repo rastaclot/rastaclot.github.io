@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px; /* Adjust the gap between the images as needed */
-    margin-top: calc(130.00v); /* Positions the container 1/3 down from the viewport height, adjusting for half the container's height */
+    margin-top: calc(130.00vh); /* Positions the container 1/3 down from the viewport height, adjusting for half the container's height */
     width: 75vw; /* Set the width of the container to 75% of the viewport width */
     margin-left: auto;
     margin-right: auto;
