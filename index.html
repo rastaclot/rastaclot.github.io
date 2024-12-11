@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evil Brett</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Rastaman</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="flavicon.png" type="image/png">
 </head>
 <body>
-    <div id="card3D"></div>
-    <div id="playButton"><a href="https://t.me/evilbrettportal">Join the Dark Side</a></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+    <div class="content">
+        <!-- Adding extra content to ensure you can scroll and see the image -->
+        <div class="image-buttons">
+            <a href="https://dexscreener.com" target="_blank">
+                <img src="dexbutton.png" alt="Dex Button">
+            </a>
+            <a href="https://x.com/BaseRastaman" target="_blank">
+                <img src="twitterbutton.png" alt="Twitter Button">
+            </a>
+            <a href="https://t.me/rastamanbase" target="_blank">
+                <img src="telegrambutton.png" alt="Telegram Button">
+            </a>
+        </div> 
+        <div class="music-button">
+            <button onclick="toggleAudio()">
+                <img src="musicbutton.png" alt="Music Button">
+            </button>
+        </div> 
+        <div style="height: 5000px;"></div> <!-- This height is for demonstration, adjust as needed -->
+    </div>
+
+    
+    <footer>
+        <p>
+            CA: 0x3b4B0a57Dc5B0df4eCf6709D4C7404140FdD7D50
+            <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+        </p>
+    </footer>
+
+    <audio id="spacebaseaudio" src="rastamanaudio.mp3"></audio>
+
+    <script>
+        function copyToClipboard() {
+            const address = "0x3b4B0a57Dc5B0df4eCf6709D4C7404140FdD7D50";
+            const textarea = document.createElement("textarea");
+            textarea.value = address;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copied to clipboard: " + address);
+        }
+
+        function toggleAudio() {
+            const audio = document.getElementById('spacebaseaudio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 </html>
