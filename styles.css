@@ -7,6 +7,7 @@ html, body {
 }
 
 body {
+    background-color: #0051ff;
     background-image: url('websitemain.png'); /* Make sure this path is correct */
     background-position: top center; /* Centers the image horizontally and aligns the top */
     background-repeat: no-repeat;
@@ -38,7 +39,7 @@ body {
 }
 
 .image-buttons a img {
-    width: 100%; /* Each image will take up 100% of the container's width */
+    width: 65%; /* Each image will take up 100% of the container's width */
     height: auto; /* Maintains the aspect ratio */
     cursor: pointer;
 }
